@@ -8,13 +8,13 @@
     <script src="../../../webcomponentsjs/webcomponents-lite.js"></script>
     <script src="../../../web-component-tester/browser.js"></script>
 
-    <link rel="import" href="../../src/faizpolymer-app/faizpolymer-app.html">
+    <link rel="import" href="../src/faizpolymer-app/faizpolymer-app.html">
   </head>
   <body>
 
     <test-fixture id="basic">
       <template>
-        <faizpolymer-app></faizpolymer-app>
+        <element-1></element-1>
       </template>
     </test-fixture>
 
@@ -23,7 +23,7 @@
 
         test('instantiating the element works', function() {
           var element = fixture('basic');
-          assert.equal(element.is, 'faizpolymer-app');
+          assert.equal(element.is, 'element-1');
         });
 
       });
